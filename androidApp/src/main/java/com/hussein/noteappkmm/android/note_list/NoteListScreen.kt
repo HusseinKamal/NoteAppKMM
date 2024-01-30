@@ -1,4 +1,4 @@
-package com.hussein.noteappkmm.android
+package com.hussein.noteappkmm.android.note_list
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -29,6 +29,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.hussein.noteappkmm.android.note_list.HideableSearchTextField
 import com.hussein.noteappkmm.android.note_list.NoteItem
 import com.hussein.noteappkmm.android.note_list.NoteListViewModel
@@ -38,6 +39,7 @@ import com.hussein.noteappkmm.domain.note.Note
 @Composable
 fun NoteListScreen(
     viewModel: NoteListViewModel = hiltViewModel(),
+    navController: NavController
 ){
     val state by viewModel.state.collectAsState()
     LaunchedEffect(key1 = true){
@@ -48,7 +50,7 @@ fun NoteListScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-
+                    navController.navigate("note_detail/-1L")
                 },
                 backgroundColor = Color.Black
             ){
@@ -93,7 +95,7 @@ fun NoteListScreen(
                         note = note,
                         backColor = Color(note.colorHex),
                         onNoteClick = {
-
+                                      navController.navigate("note_detail/${note.id}")
                         },
                         onNoteDelete = {
                             viewModel.deleteNoteById(note.id!!)

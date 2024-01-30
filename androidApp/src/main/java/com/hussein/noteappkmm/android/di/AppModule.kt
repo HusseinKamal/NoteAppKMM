@@ -1,7 +1,6 @@
 package com.hussein.noteappkmm.android.di
 
 import android.app.Application
-import com.hussein.noteappkmm.data.local.DatabaseDriverFactory
 import com.hussein.noteappkmm.data.note.SqlDelightNoteDataSource
 import com.hussein.noteappkmm.database.NoteDatabase
 import com.hussein.noteappkmm.domain.note.NoteDataSource

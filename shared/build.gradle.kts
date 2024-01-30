@@ -31,7 +31,7 @@ kotlin {
             dependencies {
                 //put your multiplatform dependencies here
                 implementation("com.squareup.sqldelight:runtime:1.5.3")//Local Database in KMM
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")//local datetime
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")//local datetime
             }
         }
         val commonTest by getting {
@@ -62,7 +62,7 @@ kotlin {
 
 sqldelight{
     database("NoteDatabase"){
-        packageName = "com.hussein.noteappkmm.database"
+        packageName = "com.hussein.noteappkmm"
         sourceFolders = listOf("sqldelight")
     }
 }
