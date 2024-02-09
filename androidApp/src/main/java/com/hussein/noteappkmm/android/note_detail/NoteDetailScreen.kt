@@ -72,10 +72,10 @@ fun NoteDetailScreen(
             .padding(16.dp)) {
             TransparentHintTextField(
                 text = state.noteTitle,
-                hint = "Enter a title ...",
+                hint = "Enter a title...",
                 isHintVisible = state.isNoteTitleHintVisible,
                 onValueChanged = viewModel::onNoteTitleChanged,
-                onFocusChanged ={
+                onFocusChanged = {
                     viewModel.onNoteTitleFocusChanged(it.isFocused)
                 },
                 singleLine = true,
@@ -86,10 +86,10 @@ fun NoteDetailScreen(
 
             TransparentHintTextField(
                 text = state.noteContent,
-                hint = "Enter some content ...",
+                hint = "Enter some content...",
                 isHintVisible = state.isNoteContentHintVisible,
-                onValueChanged = viewModel::onNoteTitleChanged,
-                onFocusChanged ={
+                onValueChanged = viewModel::onNoteContentChanged,
+                onFocusChanged = {
                     viewModel.onNoteContentFocusChanged(it.isFocused)
                 },
                 singleLine = false,
