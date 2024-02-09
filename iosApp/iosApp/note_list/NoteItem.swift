@@ -28,7 +28,7 @@ struct NoteItem: View {
                 .padding(.bottom,3)
             HStack{
                 Spacer()
-                Text(DataTimeUtil().formatNoteDate(dateTime : note.created))
+                Text(DateTimeUtil().formatNoteDate(dateTime : note.created))
                     .font(.footnote)
                     .fontWeight(.light)
                 }
@@ -42,6 +42,6 @@ struct NoteItem: View {
 struct NoteItem_Previews: PreviewProvider {
     static var previews: some View {
         NoteItem(
-            note : Note(id: nil, titlle: "My note", content : "Note content",colorHex : 0xFF2341 , created : DateTimeUtil().now()) , onDeletClick: {})
+            note : Note(id: nil, title: "My note", content : "Note content",colorHex : 0xFF2341 , created : DateTimeUtil().now()) , onDeletClick: {})
     }
 }
