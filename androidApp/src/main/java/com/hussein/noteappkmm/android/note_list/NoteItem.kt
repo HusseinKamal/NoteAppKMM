@@ -35,9 +35,10 @@ fun NoteItem(
     onNoteDelete: () -> Unit,
     modifier: Modifier=Modifier
 ){
-    val formattedDate = remember {
-        DateTimeUtil.toEpochMillis(note.created)
+    val formattedDate = remember(note.created) {
+        DateTimeUtil.formatNoteDate(note.created)
     }
+
     Column(modifier = modifier
         .clip(RoundedCornerShape(5.dp))
         .background(backColor)
@@ -76,7 +77,7 @@ fun NoteItem(
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = formattedDate.toString(),
+            text = formattedDate,
             modifier = Modifier.align(Alignment.End),
             color = Color.DarkGray
         )
