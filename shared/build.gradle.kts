@@ -30,7 +30,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 //put your multiplatform dependencies here
-                implementation("com.squareup.sqldelight:runtime:1.5.3")//Local Database in KMM
+                implementation("com.squareup.sqldelight:runtime:1.5.5")//Local Database in KMM
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")//local datetime
             }
         }

@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "note_list" ){
                     composable(route = "note_list"){
-                        //Screen lsit notes
+                        //Screen list notes
                         NoteListScreen(navController = navController)
                     }
                     composable(route = "note_detail/{noteId}" , arguments = listOf(

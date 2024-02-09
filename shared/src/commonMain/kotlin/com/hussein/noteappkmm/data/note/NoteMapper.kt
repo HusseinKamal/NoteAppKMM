@@ -1,7 +1,6 @@
 package com.hussein.noteappkmm.data.note
 
 import com.hussein.noteappkmm.domain.note.Note
-import com.hussein.noteappkmm.domain.time.DateTimeUtil
 import database.NoteEntity
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone
