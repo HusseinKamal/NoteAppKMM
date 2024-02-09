@@ -10,9 +10,9 @@ In this App you can make all CRUD queries for note database.App contains 3 scree
 
 # Android Screenshots Platform
 
-[noteapp.webm](https://github.com/HusseinKamal/NoteAppKMM/assets/29864161/5a8df637-597f-4b92-a6a9-b3b381cf8580)
+[noteapp.webm](https://github.com/HusseinKamal/NoteAppKMM/assets/29864161/18046dd6-dc29-4611-b5df-1247c7af1605)
 
-![note1](https://github.com/HusseinKamal/NoteAppKMM/assets/29864161/d8e7209f-887c-4480-90b7-10ccf03c62a0)
+![note1](https://github.com/HusseinKamal/NoteAppKMM/assets/29864161/df897ef3-1101-4bfd-90b7-17e93385aa66)
 
 ![AddNewNote](https://github.com/HusseinKamal/NoteAppKMM/assets/29864161/2db63fca-6414-457e-a509-2c42225bff5d)
 
