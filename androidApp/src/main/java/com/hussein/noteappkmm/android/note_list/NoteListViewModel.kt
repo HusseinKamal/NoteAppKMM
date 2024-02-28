@@ -21,9 +21,9 @@ class NoteListViewModel @Inject constructor(
     private val savedStateHandle: SavedStateHandle // restore our state for view model
 ) : ViewModel() {
     private val searchNotes = SearchNote()
-    private val notes =  savedStateHandle.getStateFlow("notes", emptyList<Note>())
-    private val searchText = savedStateHandle.getStateFlow("searchText", "")
-    private val isSearchActive = savedStateHandle.getStateFlow("isSearchActive",false)
+    private val notes =  savedStateHandle.getStateFlow("notes", emptyList<Note>())//same name as founded in NoteListState class
+    private val searchText = savedStateHandle.getStateFlow("searchText", "")//same name as founded in NoteListState class
+    private val isSearchActive = savedStateHandle.getStateFlow("isSearchActive",false)//same name as founded in NoteListState class
 
     val state = combine(notes,searchText,isSearchActive){ notes, searchText, isSearchActive ->
         NoteListState(

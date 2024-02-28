@@ -42,7 +42,7 @@ fun NoteListScreen(
     navController: NavController
 ){
     val state by viewModel.state.collectAsState()
-    LaunchedEffect(key1 = true){
+    LaunchedEffect(key1 = true){//This to call load notes multiple time if there are any recompostion
         viewModel.loadNotes()
     }
 
